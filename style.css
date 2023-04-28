@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+hr {
+    border-style: dotted;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+    border-width: 6px;
+    color: black;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #83A88C;
+    text-align: center; 
+    font-size: 2.5rem;
+}
+
+p {
+    color: #83A88C;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+}
+
+.backround-image {
+   height: 800px;
+   position: relative;
+}
+
+.name-image {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    align-self: center;
+    border-style: none;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+.description {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.description-text {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    font-family: 'Libre Baskerville', serif;
+    color: #83A88C;
+}
+
+.skills {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 300px minmax(100px,500px);
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+} 
+
+.skills-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    margin-top: 100px;
+    height: 300px;
+    background-color: #263E1B;
+    margin-bottom: none;
+}
+
+.contact {
+    padding-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    color: black;
+    
+}
+
+.contact-list {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 400px;
+    gap: 20px;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-text {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.svg {
+    height: 50px;
+    fill: aliceblue;
+}
+
+@media (max-width:800px) {
+    .name-image {
+        width: 500px;
+        height: 150px;
+        position: absolute;
+        align-self: center;
+        border-style: none;
+        border-radius: 50% 20% / 10% 40%;
+    }
+    .top-section {
+        display: flex;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .skills {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        text-align: left;
+    }
+    
+}
+
